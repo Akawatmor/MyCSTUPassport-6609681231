@@ -1,0 +1,98 @@
+
+@font-face {
+  font-family: font1;
+  src: url(./Fonts/BaiJamjuree-Medium.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(./Fonts/BaiJamjuree-Light.ttf);
+}
+
+@font-face {
+  font-family: font3;
+  src: url(./Fonts/KhonsongRoundedDEMO-Medium.otf);
+}
+@font-face {
+  font-family: font4;
+  src: url(./Fonts/MNLotchongBold.ttf);
+}
+@font-face {
+  font-family: font5;
+  src: url(./Fonts/MNPlaKao.ttf);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.tabmenu:hover {
+	background-color: white;
+	opacity: 10%;
+}
+
+.contacttable {
+	font-family: font2;
+	font-size:20px;
+	text-shadow:0 0 20px black;
+	color: rgb(124, 255, 255);
+	animation: floatwater 1.2s linear infinite;
+	animation-direction: alternate;
+}
+
+.animate1{
+	background: linear-gradient(-45deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
+	background-size: 200%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: stylewel 4s linear infinite;
+
+}
+
+.animate2{
+	background: linear-gradient(-90deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
+	background-size:300%;
+	animation: stylebg 10s linear infinite;
+	
+}
+
+.animate3{
+	background-image: url(./Backgrounds/bg09.gif);
+	background-size:200%;
+	font-style:font4;
+	animation: stylebg2 10s linear infinite;
+}
+
+  @keyframes stylebg {
+	0% { background-position: -150% 0%; };
+	100% { background-position: 150% 0%; };
+}
+
+@keyframes stylewel {
+	0% { background-position: -200% 0%; };
+	100% { background-position: 200% 0%; };
+}
+
+  @keyframes stylebg2 {
+	0% { background-position: -100% 50%; };
+	100% { background-position: 100% 50%; };
+}
+
+  @keyframes floatwater{
+	0% {
+		
+		transform: rotatex(-40deg);
+}
+	100% {
+		transform: rotatex(-30deg);
+		
+	}
+
+   }
+
+h2{
+	font-family:font1
+}
+cite{
+	font-family:font2
+}
