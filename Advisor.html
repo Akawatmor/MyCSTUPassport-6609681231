@@ -4,9 +4,10 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-    <title>CSTU Passport By Akawat</title>
+    <title>CSTU Passport : Advisor</title>
     <link rel="icon" href="favicon.gif" type="image/gif" >
-	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="CSS/StyleMain.css">
+	<link rel="stylesheet" href="CSS/StyleAux.css">
 
 </head>
 
@@ -60,6 +61,23 @@ text-shadow:0 0 10px black;
 animation: floatwater 0.9s linear infinite;
 animation-direction: alternate;
 }
+
+.NameAdv{
+	text-align:center;
+	color:white;
+}
+
+.PicAdv{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+	display: block;
+	border-style: dotted;
+	border-color:white;
+	border-width:5px;
+	border-radius:50px;
+}
 </style>
 
 <body class="animate2"> <!--Make Blank White border to animated color gradient-->
@@ -71,7 +89,7 @@ animation-direction: alternate;
 		</li>
 
 		<li style="float:left;margin-left:20px;margin-top:10px;">
-			<img style="border-radius:90%;" src="profile01.gif" width="60px" height="60px"/>
+			<img style="border-radius:90%;" src="profile01.gif" width="60px" height="60px" "/>
 		</li>
 
 		<li>
@@ -92,50 +110,91 @@ animation-direction: alternate;
 			‎
 		</li>
 
-		<li style="background-image: url(./Backgrounds/bg04.gif);">
-			<div style="float:right;color:aqua;font-family:font2;">
-				<h1 class="animate1" id="welcomeinfo">
-					My Advisor
-				</h1>
-
-				<h2>
-					คุณสามารถดูข้อมูลเกี่ยวกับผมเพิ่มเติมได้โดยการเลื่อนลงดูด้านล่าง<br>หรือจะกดแท็บทางด้านบน(ยังใช้ไม่ได้ในตอนนี้)
-				</h2>
-
-				<br>
-
-				<h2>เผื่อคุณคุณไม่รู้จักผม ผมจะขอเกริ่นข้อมูลส่วนของผมคร่าวๆ ก่อนละกันครับ</h2>
-
-				<h2>ผมชื่อ <u>นายเอกวัฒน์ โมรัษเฐียร</u> หรือคุณจะเรียกผมว่า <u>เพชร</u> ก็ได้
-				<br>เพื่อนบางคนของผมก็ชอบเรียกว่า <u>เพชอน</u> <b>แปลกดีเนาะ</b></h2>
-
-				<h2>ผมเป็นคนชอบฟังเพลง 90's สนใจเกี่ยวกับเทคโนโลยีสมัยเก่ารวมถึงสมัยนี้ด้วย
-				<br>และผมชอบเขียนโค้ดในการแก้ปัญหากับสิ่งที่มันมีปัญหาอ่ะ</h2>
-
-			</div>
-
-			<div>
-				<img style="
-				margin-top : 50px;
-				margin-left : 100px;
-				box-shadow: 20px 20px;
-				border: 2px solid white;
-				"width="400px" height="450px"src="welcome.jpg" />
-			</div>
-
+		</ul>
+		<div style="background-image: url(./Picture/Backgrounds/bg04.gif);">
 			<br>
+			<h1 style="color:white;">My advisor</h1>
 			<br>
+			<img class="PicAdv" src="Picture/Advisor/adv.jpg" height="420px" />
 			<br>
+			<h2 class="NameAdv">ผศ.ดร.ลัมพาพรรณ พันธ์ชูจิตร์<br><br>Asst.Prof.Dr. Lumpapun Punchoojit</h2>
+		<br>
+		<br>
+		</div>
 
-		</li>
+		<div style="
+		background-image:url(./Picture/Backgrounds/bg07.gif);
+		background-size: cover;">
+
+		<h2 class="Mycontactanimate" style="background-image:url(./Picture/Backgrounds/bg08.png);background-size: cover;">
+			Contact Information
+		</h2>
+
+			<table class="contacttable" align="center" style="background-image:url(./Picture/Backgrounds/bg08.png);background-size: cover;">
+				<tr>
+					<th width="75px"></th>
+					<th width="300px"></th>
+					<th width="10px"></th>
+
+				</tr>
+				<tr>
+					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td><p>‎อาคาร LC-2 ชั้น 2 ห้อง 224</p></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td><p>‎02-546-4444 ต่อ 2157 ต่อ 224</p></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td><p>‎lumpapun_p@sci.tu.ac.th</p></td>
+					<td></td>
+
+				</tr>
+			</table>
+			<br>
+		</div>
+			<h2>หัวข้อวิจัยที่สนใจ (RESEARCH INTEREST)</h2>
+			<ul>
+				<li>Human-Computer Interaction</li>
+				<li>Child-Computer Interaction</li>
+				<li>Human and Psychological factors in designing UX/UI</li>
+				<li>UX/UI research methods</li>
+				<li>Mobile Usability</li>
+			</ul>
+		<div>
+			การศึกษา (EDUCATION)
+			Ph.D. (Computer Science), Faculty of Science and Technology, Thammasat University , 2019
+			M.Sc. (Information Technology) ,Faculty of Information Technology, King Mongkut’s University of Technology North Bangkok, 2013
+			B.Sc. (Computer Science), Mahidol University International College , 2009
+			รายละเอียดความเชี่ยวชาญ (EXPERTISE)
+			
+			วิจัยด้านการปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์ และระหว่างเด็กและคอมพิวเตอร์ ศึกษาในเชิงทฤษฎี วัดผลและประเมินผล รวมถึงการประยุกต์ใช้ทฤษฎีในการสร้างผลิตภัณฑ์ต่าง ๆ
+			วิจัยด้านมนุษยปัจจัยและปัจจัยเชิงจิตวิทยาที่มีอิทธิพลต่อการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้
+			การประยุกต์ใช้วิธีวิจัยรูปแบบต่าง ๆ ในการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้
+			งานวิจัยด้านความยากง่ายในการใช้งานอุปกรณ์สื่อสารแบบเคลื่อนที่
+			ผลงานเด่น (SELECTED PUBLICATION)
+			ใส่ผลงานตรงนี้
+			ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)
+			Google Scholar Profile https://scholar.google.com/citations?user=6lbEl34KcAAC&hl=th
+			ResearchGate Profile https://www.researchgate.net/publication/320986719_Usability_Studies_on_Mobile_User_Interface_Design_Patterns_A_Systematic_Literature_Review
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
 
 		
 
-	</ul>
 
 	<footer>
 		<p style="font-family: font1;color:white;">@2023 CSS+HTML by Akawat + Email : petchsrojar@gmail.com</p>
-		<p style="font-family: font1;color:white;">Version 2.05 Release by Akawat-SKO</p>
+		<p style="font-family: font1;color:white;">Version 2.0 Release by Akawat-SKO</p>
 	</footer>
 
 </body>

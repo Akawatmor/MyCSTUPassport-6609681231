@@ -26,10 +26,58 @@
   box-sizing: border-box;
 }
 
-.tabmenu:hover {
-	background-color: white;
-	opacity: 10%;
+.tabmenu{
+	float:right;
+	margin-top:10px;
+	margin-right:25px;
 }
+
+.tabmenubtn {
+	background-color:#77a600;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ebeaff;
+	min-width: 200px;
+	z-index: 1;
+	right: 0;
+
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-family:font2;
+	display: block;
+	transition: 0.5s;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #88ff84;
+	transition: 0.5s;
+}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+
+  }
+  
+  .dropdown:hover .tabmenubtn {
+	background-color: #b7ff00;
+	transition: 0.5s;
+  }
 
 .contacttable {
 	font-family: font2;
@@ -38,7 +86,21 @@
 	color: rgb(124, 255, 255);
 	animation: floatwater 1.2s linear infinite;
 	animation-direction: alternate;
+	opacity:100%;
 }
+
+.Mycontactanimate{
+	float:left;
+	margin-left:100px;
+	margin-top:100px;
+	padding:20px;
+	color:white;
+	font-size:50px;
+	font-family:font1;
+	text-shadow:0 0 10px black;
+	animation: floatwater 0.9s linear infinite;
+	animation-direction: alternate;
+	}
 
 .animate1{
 	background: linear-gradient(-45deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
@@ -57,7 +119,7 @@
 }
 
 .animate3{
-	background-image: url(./Backgrounds/bg09.gif);
+	background-image: url(../Picture/Backgrounds/bg09.gif);
 	background-size:200%;
 	font-style:font4;
 	animation: stylebg2 10s linear infinite;
