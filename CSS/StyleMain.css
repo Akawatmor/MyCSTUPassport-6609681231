@@ -26,56 +26,58 @@
   box-sizing: border-box;
 }
 
-.tabmenu{
+/* dropdown function*/
+
+#tabmenu{
 	float:right;
-	margin-top:10px;
-	margin-right:25px;
+	margin-top:5px;
+	margin-right:15px;
 }
 
-.tabmenubtn {
-	background-color:#77a600;
-	padding: 5px;
+.dropbtn {
+	background-color: #77a600;
+	padding: 10px;
 	border: none;
 	cursor: pointer;
+	transition: 0.5s;
   }
   
-  .dropdown {
+  .menu3line {
 	position: relative;
 	display: inline-block;
-
+	z-index: 1;
   }
   
-  .dropdown-content {
+  .linklist {
 	display: none;
 	position: absolute;
-	background-color: #ebeaff;
-	min-width: 200px;
-	z-index: 1;
 	right: 0;
-
+	background-color: #c3ecff;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
   }
   
-  .dropdown-content a {
+  .linklist a {
 	color: black;
-	padding: 15px 30px;
+	padding: 16px 16px;
 	text-decoration: none;
-	font-family:font2;
+	font-family:font1;
 	display: block;
 	transition: 0.5s;
   }
   
-  .dropdown-content a:hover {
-	background-color: #88ff84;
+  .linklist a:hover {
+	background-color:#d1f770;
 	transition: 0.5s;
 }
   
-  .dropdown:hover .dropdown-content {
+  .menu3line:hover .linklist {
 	display: block;
-
   }
   
-  .dropdown:hover .tabmenubtn {
-	background-color: #b7ff00;
+  .menu3line:hover .dropbtn {
+	background-color: #39ff40;
 	transition: 0.5s;
   }
 
@@ -87,6 +89,8 @@
 	animation: floatwater 1.2s linear infinite;
 	animation-direction: alternate;
 	opacity:100%;
+	background-image:url(../Picture/Backgrounds/bg08.png);
+	background-size: cover;
 }
 
 .Mycontactanimate{
@@ -100,7 +104,10 @@
 	text-shadow:0 0 10px black;
 	animation: floatwater 0.9s linear infinite;
 	animation-direction: alternate;
+	background-image:url(../Picture/Backgrounds/bg08.png);
+	background-size: cover;
 	}
+
 
 .animate1{
 	background: linear-gradient(-45deg, #61d8c5, #755edf, #3ce36e, #e1572d,#61d8c5);
@@ -119,10 +126,7 @@
 }
 
 .animate3{
-	background-image: url(../Picture/Backgrounds/bg09.gif);
-	background-size:200%;
-	font-style:font4;
-	animation: stylebg2 10s linear infinite;
+	
 }
 
   @keyframes stylebg {
@@ -157,4 +161,33 @@ h2{
 }
 cite{
 	font-family:font2
+}
+
+
+.profile{
+	float:left;
+	margin-left:20px;
+	margin-top:10px;
+}
+#profilepic{
+	border-radius:90%;"
+}
+.head1{
+display: block;
+color: white;
+text-align: left;
+padding-left: 100px;
+text-decoration: none;
+font-family:font1
+}
+
+/*marquee color set*/
+#marqueecolor{
+	background-color:yellow;
+	color:red;
+	font-family:font2
+}
+
+#trans1{
+	background-image: linear-gradient(yellow, rgb(0, 0, 0));
 }

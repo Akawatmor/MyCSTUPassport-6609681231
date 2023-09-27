@@ -12,6 +12,8 @@
 </head>
 
 <style>
+
+
 #table1{
 list-style-type: none;
 margin: 0;
@@ -20,14 +22,6 @@ overflow: hidden;
 background-color: #77a600 ;
 	}
 	
-#head1{
-display: block;
-color: white;
-text-align: left;
-padding-left: 100px;
-text-decoration: none;
-font-family:font1
-}
 
 #welcomeinfo{
 margin-top :50px;
@@ -84,23 +78,31 @@ animation-direction: alternate;
 
 	<ul id = table1>
 
-		<li class="tabmenu" style="float:right;margin-right:20px;margin-top:18px;transition: 0.3s;opacity:100% !important;">
-			<img src="LOGO/tab01.png" width="50px" height="50px"/>
+		<li id="tabmenu">
+
+			<div class="menu3line">
+				<button class="dropbtn"><img src="Picture/LOGO/tab01.png" width="50px" height="50px"/></button>
+				<div class="linklist">
+				<a href="IndexCSS.html">Main Page</a>
+				<a href="Advisor.html">My Advisor</a>
+				<a href="Activity1.html">My Activity</a>
+				<p></p>
+				<a href="Interested.html">My interested Topic</a>
+				<a href="Info.html">More Info</a>
+				</div>
+			  </div>
 		</li>
 
-		<li style="float:left;margin-left:20px;margin-top:10px;">
-			<img style="border-radius:90%;" src="profile01.gif" width="60px" height="60px" "/>
+		<li class="profile">
+			<img id="profilepic" src="Picture/profile01.gif" width="60px" height="60px"/>
 		</li>
 
 		<li>
-			<h1 class="head1">
-			CSTU Passport by Akawat</h1>
+			<h1 class="head1">CSTU Passport by Akawat</h1>
 		</li>
-				
-				
 
-		<li style="background-color:yellow;color:red;">
-			<marquee style="font-family:font2">
+		<li id="marqueecolor" >
+			<marquee>
 				<b>Annoucement :</b> To play some video, you need web browsers that can support AV1(video codec) and opus(audio codec). Do not worry that main video cannot play
 				Also This Version Add "More Music" so you can listen to my favourite music.
 			</marquee>
@@ -110,10 +112,10 @@ animation-direction: alternate;
 			‎
 		</li>
 
-		</ul>
+		
 		<div style="background-image: url(./Picture/Backgrounds/bg04.gif);">
 			<br>
-			<h1 style="color:white;">My advisor</h1>
+			<h1 class="animate2" style="color:white;font-family:font1;font-size:30px;margin:20px;">My advisor</h1>
 			<br>
 			<img class="PicAdv" src="Picture/Advisor/adv.jpg" height="420px" />
 			<br>
@@ -130,7 +132,7 @@ animation-direction: alternate;
 			Contact Information
 		</h2>
 
-			<table class="contacttable" align="center" style="background-image:url(./Picture/Backgrounds/bg08.png);background-size: cover;">
+			<table class="contacttable" align="center" style="background-image:url(./Picture/Backgrounds/bg08.png); background-size: cover;">
 				<tr>
 					<th width="75px"></th>
 					<th width="300px"></th>
@@ -138,18 +140,18 @@ animation-direction: alternate;
 
 				</tr>
 				<tr>
-					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td style="text-align:center;"><img src="LOGO/logo01.svg" width="48px" height="48px"/></td>
 					<td><p>‎อาคาร LC-2 ชั้น 2 ห้อง 224</p></td>
 					<td></td>
 				</tr>
 				<tr>
-					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td style="text-align:center;"><img src="LOGO/logo01.svg" width="48px" height="48px"/></td>
 					<td><p>‎02-546-4444 ต่อ 2157 ต่อ 224</p></td>
 					<td></td>
 
 				</tr>
 				<tr>
-					<td style="text-align:center;"><a href="https://www.instagram.com/pechon_sk42/"><img src="LOGO/logo01.svg" width="48px" height="48px"/></a></td>
+					<td style="text-align:center;"><img src="LOGO/logo01.svg" width="48px" height="48px"/></td>
 					<td><p>‎lumpapun_p@sci.tu.ac.th</p></td>
 					<td></td>
 
@@ -157,6 +159,7 @@ animation-direction: alternate;
 			</table>
 			<br>
 		</div>
+
 			<h2>หัวข้อวิจัยที่สนใจ (RESEARCH INTEREST)</h2>
 			<ul>
 				<li>Human-Computer Interaction</li>
@@ -166,21 +169,31 @@ animation-direction: alternate;
 				<li>Mobile Usability</li>
 			</ul>
 		<div>
-			การศึกษา (EDUCATION)
-			Ph.D. (Computer Science), Faculty of Science and Technology, Thammasat University , 2019
-			M.Sc. (Information Technology) ,Faculty of Information Technology, King Mongkut’s University of Technology North Bangkok, 2013
-			B.Sc. (Computer Science), Mahidol University International College , 2009
-			รายละเอียดความเชี่ยวชาญ (EXPERTISE)
+
+			<h2>การศึกษา (EDUCATION)</h2>
+			<ul>
+				<li>Ph.D. (Computer Science), Faculty of Science and Technology, Thammasat University , 2019</li>
+				<li>M.Sc. (Information Technology) ,Faculty of Information Technology, King Mongkut’s University of Technology North Bangkok, 2013</li>
+				<li>B.Sc. (Computer Science), Mahidol University International College , 2009</li>
+			</ul>
+
+			<h2>รายละเอียดความเชี่ยวชาญ (EXPERTISE)</h2>
+			<ul>
+				<li>วิจัยด้านการปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์ และระหว่างเด็กและคอมพิวเตอร์ ศึกษาในเชิงทฤษฎี วัดผลและประเมินผล รวมถึงการประยุกต์ใช้ทฤษฎีในการสร้างผลิตภัณฑ์ต่าง ๆ</li>
+				<li>วิจัยด้านมนุษยปัจจัยและปัจจัยเชิงจิตวิทยาที่มีอิทธิพลต่อการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้</li>
+				<li>การประยุกต์ใช้วิธีวิจัยรูปแบบต่าง ๆ ในการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้</li>
+				<li>งานวิจัยด้านความยากง่ายในการใช้งานอุปกรณ์สื่อสารแบบเคลื่อนที่</li>
+			</ul>
+
+			<h2>ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)</h2>
+			<ul>
+				<li>Google Scholar Profile https://scholar.google.com/citations?user=6lbEl34KcAAC&hl=th</li>
+				<li>ResearchGate Profile https://www.researchgate.net/publication/320986719_Usability_Studies_on_Mobile_User_Interface_Design_Patterns_A_Systematic_Literature_Review</li>
+			</ul>
 			
-			วิจัยด้านการปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์ และระหว่างเด็กและคอมพิวเตอร์ ศึกษาในเชิงทฤษฎี วัดผลและประเมินผล รวมถึงการประยุกต์ใช้ทฤษฎีในการสร้างผลิตภัณฑ์ต่าง ๆ
-			วิจัยด้านมนุษยปัจจัยและปัจจัยเชิงจิตวิทยาที่มีอิทธิพลต่อการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้
-			การประยุกต์ใช้วิธีวิจัยรูปแบบต่าง ๆ ในการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้
-			งานวิจัยด้านความยากง่ายในการใช้งานอุปกรณ์สื่อสารแบบเคลื่อนที่
-			ผลงานเด่น (SELECTED PUBLICATION)
-			ใส่ผลงานตรงนี้
-			ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)
-			Google Scholar Profile https://scholar.google.com/citations?user=6lbEl34KcAAC&hl=th
-			ResearchGate Profile https://www.researchgate.net/publication/320986719_Usability_Studies_on_Mobile_User_Interface_Design_Patterns_A_Systematic_Literature_Review
+			
+			
+			
 		</div>
 		<div>
 			
@@ -189,7 +202,7 @@ animation-direction: alternate;
 			
 		</div>
 
-		
+	</ul>
 
 
 	<footer>
