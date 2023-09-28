@@ -126,6 +126,34 @@
 }
 
 .animate3{
+	animation: bordercolorchange1 0.5s linear alternate infinite;
+	
+}
+
+.animate3:hover{
+	animation-play-state: paused;
+	
+}
+.animate4{
+	animation: bordercolorchange1 0.5s linear alternate-reverse infinite;
+	
+}
+
+.animate5{
+	animation: movething1 0.5s linear alternate infinite;
+	
+}
+
+.animate6{
+	animation: movething1 0.5s linear alternate-reverse infinite;
+	
+}
+.animate7{
+	animation: movething2 2s linear infinite;
+	
+}
+.animate8{
+	animation: movething2 2s linear reverse infinite;
 	
 }
 
@@ -155,6 +183,25 @@
 	}
 
    }
+
+   @keyframes bordercolorchange1 {
+	0% { border:10px dashed #755edf }
+	100% {border:10px dashed #0dff00 }
+}
+
+
+@keyframes movething1{
+	0% {transform: translate(0px, 10px);}
+	100% {transform: translate(0px, -10px);}
+}
+
+@keyframes movething2{
+	0% {transform: translate(0px, 10px);}
+	25% {transform: translate(-10px, 10px);}
+	50% {transform: translate(-10px, -10px);}
+	75% {transform: translate(10px, -10px);}
+	100% {transform: translate(0px, 10px);}
+}
 
 h2{
 	font-family:font1
@@ -188,6 +235,4 @@ font-family:font1
 	font-family:font2
 }
 
-#trans1{
-	background-image: linear-gradient(yellow, rgb(0, 0, 0));
-}
+
