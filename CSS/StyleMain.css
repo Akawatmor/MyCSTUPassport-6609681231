@@ -156,6 +156,11 @@
 	animation: movething2 2s linear reverse infinite;
 	
 }
+.animate9{
+	animation: bordercolorchange2 0.5s linear alternate infinite;
+	
+}
+
 
   @keyframes stylebg {
 	0% { background-position: -150% 0%; };
@@ -169,6 +174,11 @@
 
   @keyframes stylebg2 {
 	0% { background-position: -100% 50%; };
+	100% { background-position: 100% 50%; };
+}
+
+@keyframes stylebg3 {
+	0% { background-position: -100% -50%; };
 	100% { background-position: 100% 50%; };
 }
 
@@ -187,6 +197,10 @@
    @keyframes bordercolorchange1 {
 	0% { border:10px dashed #755edf }
 	100% {border:10px dashed #0dff00 }
+}
+@keyframes bordercolorchange2 {
+	0% { border:5px double #755edf }
+	100% {border:5px double #0dff00 }
 }
 
 
