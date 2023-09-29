@@ -84,6 +84,91 @@ animation-direction: alternate;
 	border-width:5px;
 	border-radius:50px;
 }
+
+#trans1{
+	background-image: linear-gradient(yellow, rgb(0, 0, 0));
+}
+#bg01{
+	background-image: url(../Picture/Backgrounds/bg04.gif);
+}
+#bg02{
+	background-image:url(../Picture/Backgrounds/bg07.gif);
+	background-size: cover;
+}
+#bg03{
+	background-image:url(../Picture/Backgrounds/bg08.png);background-size: cover;
+}
+
+#bg04{
+	background-image:url(../Picture/Backgrounds/bg05.jpg);
+	background-size: cover;
+}
+
+#bg05{
+	background-image:url(../Picture/Backgrounds/bg01.jpg);
+	background-size: cover;
+	animation: stylebg2 10s linear infinite;
+}
+
+#advisortitle{
+	color:white;font-family:font1;
+	font-size:30px;
+	margin:20px;text-align: center;
+	text-shadow: 2px -1px #000000;
+}
+#centertxt{
+	text-align:center;
+}
+
+#researchintrest{
+	margin-left:100px;
+	color:white;
+	font-size:30px;
+}
+
+#riinfo{
+	color:white;
+	font-family: font2;
+	margin-left:180px;
+	font-size:20px
+}
+
+#marginl100{
+	margin-left:100px
+}
+#marginl75{
+	margin-left:75px
+}
+#marginl50{
+	margin-left:50px
+}
+#marginl25{
+	margin-left:25px
+}
+
+#trans1{
+	background-image: linear-gradient(rgb(65, 65, 65), rgb(217, 217, 217));
+}
+
+#title1{
+	margin-left:100px;font-size:30px;
+}
+#title2{
+	font-family: font2;margin-left:180px;font-size:20px
+}
+#title3{
+	color:white;
+	margin-left:100px;
+	font-size:30px;
+	text-shadow: 2px -1px #4f4f4f;
+}
+#title4{
+	color:white;
+	font-family: font2;
+	margin-left:180px;
+	font-size:20px
+}
+
 </style>
 
 <body class="animate2"> <!--Make Blank White border to animated color gradient-->
@@ -98,8 +183,8 @@ animation-direction: alternate;
 				<a href="../IndexCSS.html">Main Page</a>
 				<a href="Advisor.html"><b>My Advisor</b></a>
 				<a href="ActivitySelect.html">My Activity</a>
-				<a href="VolunteerM6,html">-> Activity 1</a>
-				<a href="Activity2.html">-> Activity 2</a>
+				<a href="VolunteerM6.html">┕> VolunteerM6</a>
+				<a href="ScienceForEveryday.html">┕> ScienceForEveryday</a>
 				<p></p>
 				<a href="Index.html">Plain Html</a>
 				</div>
@@ -116,19 +201,18 @@ animation-direction: alternate;
 
 		<li id="marqueecolor" >
 			<marquee>
-				<b>Annoucement :</b> To play some video, you need web browsers that can support AV1(video codec) and opus(audio codec). Do not worry that main video cannot play
-				Also This Version Add "More Music" so you can listen to my favourite music.
+				Nothing to Annouce Here!
 			</marquee>
 		</li>
 
-		<li style="background-image: linear-gradient(yellow, rgb(0, 0, 0));">
+		<li id=trans1">
 			‎
 		</li>
 
 		
-		<li style="background-image: url(../Picture/Backgrounds/bg04.gif);">
+		<li id="bg01">
 			<br>
-			<h1 class="animate2" style="color:white;font-family:font1;font-size:30px;margin:20px;text-align: center;text-shadow: 2px -1px #000000;">*-- My advisor --*</h1>
+			<h1 class="animate2" id="advisortitle">*-- My advisor --*</h1>
 			<br>
 			<img class="PicAdv" src="../Picture/Advisor/adv.jpg" height="420px" />
 			<br>
@@ -137,10 +221,9 @@ animation-direction: alternate;
 		<br>
 		</li>
 
-		<li style="background-image:url(../Picture/Backgrounds/bg07.gif);background-size: cover;">
-		
+		<li id="bg02">
 
-		<div class="Mycontactanimate" style="background-image:url(../Picture/Backgrounds/bg08.png);background-size: cover;">
+		<div class="Mycontactanimate" id="bg03">
 			Contact Information
 		</div>
 			<br><br>
@@ -151,16 +234,16 @@ animation-direction: alternate;
 
 				</tr>
 				<tr>
-					<td style="text-align:center;"><img src="../Picture/LOGO/logo07.png" width="48px" height="48px"/></td>
+					<td id="centertxt"><img src="../Picture/LOGO/logo07.png" width="48px" height="48px"/></td>
 					<td><p>‎อาคาร LC-2 ชั้น 2 ห้อง 224</p></td>
 				</tr>
 				<tr>
-					<td style="text-align:center;"><img src="../Picture/LOGO/logo06.png" width="48px" height="48px"/></td>
+					<td id="centertxt"><img src="../Picture/LOGO/logo06.png" width="48px" height="48px"/></td>
 					<td><p>‎02-546-4444 ต่อ 2157 ต่อ 224</p></td>
 
 				</tr>
 				<tr>
-					<td style="text-align:center;"><img src="../Picture/LOGO/logo04.png" width="48px" height="48px"/></td>
+					<td id="centertxt"><img src="../Picture/LOGO/logo04.png" width="48px" height="48px"/></td>
 					<td><p>‎lumpapun_p@sci.tu.ac.th</p></td>
 
 				</tr>
@@ -171,56 +254,44 @@ animation-direction: alternate;
 
 		</li>
 		
-		<li style="background-image:url(../Picture/Backgrounds/bg05.jpg); background-size: cover;">
+		<li id="bg04">
 			<br>
-			<h2 style="margin-left:100px;color:white;font-size:30px;">หัวข้อวิจัยที่สนใจ (RESEARCH INTEREST)</h2>
-			<ul style="color:white;font-family: font2;margin-left:180px;font-size:20px">
-				<li style="margin-left:100px">Human-Computer Interaction</li>
-				<li style="margin-left:75px">Child-Computer Interaction</li>
-				<li style="margin-left:50px">Human and Psychological factors in designing UX/UI</li>
-				<li style="margin-left:25px">UX/UI research methods</li>
+			<h2 id="researchintrest">หัวข้อวิจัยที่สนใจ (RESEARCH INTEREST)</h2>
+			<ul id="riinfo">
+				<li id="marginl100">Human-Computer Interaction</li>
+				<li id="marginl75">Child-Computer Interaction</li>
+				<li id="marginl50">Human and Psychological factors in designing UX/UI</li>
+				<li id="marginl25">UX/UI research methods</li>
 				<li>Mobile Usability</li>
 			</ul>
 		<br><br>
 		</li>
 
-		<li style="background-image: linear-gradient(rgb(65, 65, 65), rgb(217, 217, 217));">
+		<li id="trans1">
 			‎
 		</li>
-		<li style
-		="background-image:url(../Picture/Backgrounds/bg01.jpg); background-size: cover;animation: stylebg2 10s linear infinite;">
+		<li id="bg05">
 			<br>
-			<h2 style="margin-left:100px;font-size:30px;"><u>การศึกษา (EDUCATION)</u></h2>
-			<ul style="font-family: font2;margin-left:180px;font-size:20px">
+			<h2 id="title1"><u>การศึกษา (EDUCATION)</u></h2>
+			<ul id="title2">
 				<li>Ph.D. (Computer Science), Faculty of Science and Technology, Thammasat University , 2019</li>
 				<li>M.Sc. (Information Technology) ,Faculty of Information Technology, King Mongkut’s University of Technology North Bangkok, 2013</li>
 				<li>B.Sc. (Computer Science), Mahidol University International College , 2009</li>
 			</ul>
 			<br><br><br>
-		</li>
-		<li style="background-image: linear-gradient(rgb(217, 217, 217),rgb(150, 173, 255));">
-			‎
-		</li>
-		<li style="background-image:url(../Picture/Backgrounds/bg16.jpeg); background-size: cover;animation: stylebg3 10s linear infinite">
+
 			<br>
-			<h2 style="margin-left:100px;font-size:30px;">รายละเอียดความเชี่ยวชาญ (EXPERTISE)</h2>
-			<ul style="font-family: font2;margin-left:180px;font-size:20px">
+			<h2 id="title1">รายละเอียดความเชี่ยวชาญ (EXPERTISE)</h2>
+			<ul id="title2">
 				<li>วิจัยด้านการปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์ และระหว่างเด็กและคอมพิวเตอร์ ศึกษาในเชิงทฤษฎี วัดผลและประเมินผล รวมถึงการประยุกต์ใช้ทฤษฎีในการสร้างผลิตภัณฑ์ต่าง ๆ</li>
 				<li>วิจัยด้านมนุษยปัจจัยและปัจจัยเชิงจิตวิทยาที่มีอิทธิพลต่อการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้</li>
 				<li>การประยุกต์ใช้วิธีวิจัยรูปแบบต่าง ๆ ในการออกแบบส่วนต่อประสานและประสบการณ์ผู้ใช้</li>
 				<li>งานวิจัยด้านความยากง่ายในการใช้งานอุปกรณ์สื่อสารแบบเคลื่อนที่</li>
 			</ul>
-			<br><br><br>
-		</li>
-
-		<li style="background-image: linear-gradient(rgb(150, 173, 255),rgb(79, 79, 79));">
-			‎
-		</li>
-
-		<li style="background-image:url(../Picture/Backgrounds/bg01.jpg); background-size: cover;"">
 			<br>
-			<h2 style="color:white;margin-left:100px;font-size:30px;text-shadow: 2px -1px #000000;">ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)</h2>
-			<ul style="color:white;font-family: font2;margin-left:180px;font-size:20px">
+			<br>
+			<h2 id="title3">ผลงานตีพิมพ์ทั้งหมด (ALL PUBLICATIONS)</h2>
+			<ul id="title4">
 				<li><a href="https://scholar.google.com/citations?user=6lbEl34KcAAC&hl=th">Google Scholar Profile</a></li>
 				<li><a href="https://www.researchgate.net/publication/320986719_Usability_Studies_on_Mobile_User_Interface_Design_Patterns_A_Systematic_Literature_Review">ResearchGate Profile</a></li>
 			</ul>
@@ -242,8 +313,8 @@ animation-direction: alternate;
 
 
 	<footer>
-		<p style="font-family: font1;color:white;">@2023 CSS+HTML by Akawat + Email : petchsrojar@gmail.com</p>
-		<p style="font-family: font1;color:white;">Version 2.23 PreRelease by Akawat-SKO</p>
+		<p id="fontfooter">@2023 CSS+HTML by Akawat + Email : petchsrojar@gmail.com</p>
+		<p id="fontfooter">Version 2.25 Release by Akawat-SKO</p>
 	</footer>
 
 </body>

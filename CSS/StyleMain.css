@@ -53,7 +53,7 @@
 	position: absolute;
 	right: 0;
 	background-color: #c3ecff;
-	min-width: 200px;
+	min-width: 300px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }
@@ -130,30 +130,29 @@
 	
 }
 
-.animate3:hover{
-	animation-play-state: paused;
-	
-}
+
 .animate4{
-	animation: bordercolorchange1 0.5s linear alternate-reverse infinite;
-	
+	animation: bordercolorchange1 0.5s linear alternate-reverse infinite;	
 }
 
 .animate5{
 	animation: movething1 0.5s linear alternate infinite;
-	
+	border: 5px dashed white;
 }
 
 .animate6{
 	animation: movething1 0.5s linear alternate-reverse infinite;
+	border: 5px dashed lightblue;
 	
 }
 .animate7{
 	animation: movething2 2s linear infinite;
+	border: 5px dashed lightgreen;
 	
 }
 .animate8{
 	animation: movething2 2s linear reverse infinite;
+	border: 5px dashed lightcoral;
 	
 }
 .animate9{

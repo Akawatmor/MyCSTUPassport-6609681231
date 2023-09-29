@@ -46,20 +46,6 @@ border-color:white;
 border-radius: 20px;
 }
 
-.Mycontactanimate{
-float:left;
-margin-left:100px;
-margin-top:100px;
-padding:20px;
-background-image:url(../Backgrounds/bg08.png);
-background-size: cover;
-color:white;
-font-size:50px;
-font-family:font1;
-text-shadow:0 0 10px black;
-animation: floatwater 0.9s linear infinite;
-animation-direction: alternate;
-}
 
 h2{
 	color: white;
@@ -72,6 +58,65 @@ h2{
 	background-image: linear-gradient(rgb(144, 125, 255), rgb(0, 0, 0));
 }
 
+#Activitynum{
+	font-size:40px;
+	margin-left:50px;
+	text-shadow: 2px 2px #000000;
+}
+#Activityname{
+	font-size:48px;
+	text-shadow: 2px -1px #000000;
+}
+
+#Activitydesc{
+	font-size:24px;
+	padding:20px;
+	text-shadow: 1px 2px #000000;
+}
+
+#SelectAct{
+	font-family: font1;
+	text-align:center;
+	color:white;
+	text-shadow: 2px 2px #323232;
+}
+
+#sectionselect{
+	background-image:url(../Picture/Backgrounds/bg09.gif);
+	animation: stylebg2 10s linear infinite;
+}
+
+#background1
+{
+	background-image: url(../Picture/Backgrounds/bg17.jpg);
+	background-size: cover;
+	font-family: font2;
+	color: white;
+	text-shadow: 10px #000000;
+}
+
+#background2{
+	background-image:url(../Picture/Backgrounds/bg03.gif);
+	animation: stylebg2 10s linear infinite;
+}
+
+#settableheight{
+	height:500px;
+	color:white;
+	font-family:font2;
+}
+
+#picturetitle{
+	font-size:40px;margin-left:50px
+}
+
+#videotitle{
+	color:white;
+	font-family:font1;
+	font-size:30px;
+	margin:20px;
+	text-align: center;
+}
 </style>
 
 <body class="animate2"> <!--Make Blank White border to animated color gradient-->
@@ -85,8 +130,8 @@ h2{
 				<a href="../IndexCSS.html">Main Page</a>
 				<a href="Advisor.html">My Advisor</a>
 				<a href="ActivitySelect.html">My Activity</a>
-				<a href="VolunteerM6.html">-> VolunteerM6</a>
-				<a href="Activity2.html"><b>-> Activity 2</b></a>
+				<a href="VolunteerM6.html">┕> VolunteerM6</a>
+				<a href="ScienceForEveryday.html"><b>┕> ScienceForEveryday</b></a>
 				<p></p>
 				<a href="Index.html">Plain Html</a>
 				</div>
@@ -103,8 +148,7 @@ h2{
 
 		<li id="marqueecolor" >
 			<marquee>
-				<b>Annoucement :</b> To play some video, you need web browsers that can support AV1(video codec) and opus(audio codec). Do not worry that main video cannot play
-				Also This Version Add "More Music" so you can listen to my favourite music.
+				Nothing to Annouce Here!
 			</marquee>
 		</li>
 
@@ -113,11 +157,12 @@ h2{
 		</li>
 
 		<!--Content-->
-		<li style="background-image: url(../Picture/Backgrounds/bg17.jpg);background-size: cover;font-family: font2;color: white;text-shadow: 10px #000000;">
+
+		<li id="background1">
 			<br>
-		<h2 style="font-size:40px;margin-left:50px;text-shadow: 2px 2px #000000;"><i>Activity 2 :</i></h2>
-		<h2 align="center" style="font-size:48px;text-shadow: 2px -1px #000000;">การแข่งขัน IOT หัวข้อ Science for every generation</h2>
-		<h3 style="font-size:24px;padding:20px;text-shadow: 1px 2px #000000;"> &emsp; &emsp;แข่งขันกิจกรรม Science for every generation ของสัปดาห์วันวิทยาศาสตร์ระดับชาติที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
+		<h2 id="Activitynum"><i>Activity 2 :</i></h2>
+		<h2 align="center" id="Activityname">การแข่งขัน IOT หัวข้อ Science for every generation</h2>
+		<h3 id="Activitydesc"> &emsp; &emsp;แข่งขันกิจกรรม Science for every generation ของสัปดาห์วันวิทยาศาสตร์ระดับชาติที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
 			<br>โดยการแข่งขันเป็นการแข่งขันรอบเช้า และรอบบ่ายเป็นการตัดสินผลคะแนน โดยกลุ่มของผมได้รับรางวัลเหรียญทองลำดับที่ 4</h3>
 		<br>
 	</li>
@@ -126,35 +171,39 @@ h2{
 		‎
 		</li>
 
-		<li style="background-image:url(../Picture/Backgrounds/bg03.gif);animation: stylebg2 10s linear infinite;">
+		<li id="background2">
 		<br>
-		<h2 style="font-size:40px;margin-left:50px">รูปภาพ</h2>
+		<h2 id="picturetitle">รูปภาพ</h2>
 
-		<table align="center" width="80%" style="border:2px solid #000000">
+		<table align="center" width="80%">
 			<tr>
 				<th align="center"></th>
 				<th align="center"></th>
 			</tr>
-			<tr style="height:500px;">
+			<tr id="settableheight">
 				<td align="center">
 					<img src="../Picture/Activity/Act2-1.jpg" width="480" height="320" class="animate3"/>
+					<br><p>ภาพถ่ายการรับรางวัล</p>
 				</td>
 				<td align="center">
-					<img src="../Picture/Activity/Act2-2.jpg" width="480" height="320" class="animate4"/>
+					<img src="../Picture/Activity/Act2-2.png" width="480" height="320" class="animate4"/>
+					<br><p>ภาพถ่ายหน้าเว็บของอุปกรณ์</p>
 				</td>
 			</tr>
-			<tr style="height:500px;">
+			<tr id="settableheight">
 				<td align="center">
 					<img src="../Picture/Activity/Act2-3.jpg" width="480" height="320" class="animate5"/>
+					<br><p>ภาพถ่ายก่อนเข้างาน</p>
 				</td>
 				<td align="center">
 					<img src="../Picture/Activity/Act2.jpg" width="480" height="320"class="animate8"/>
+					<br><p>ภาพถ่ายโครงงาน</p>
 				</td>
 			</tr>
 		</table>
 
 
-		<h2 class="animate2" style="color:white;font-family:font1;font-size:30px;margin:20px;text-align: center;">VV-- วิดีโอ --VV</h2>
+		<h2 class="animate2" id="videotitle">VV-- วิดีโอ --VV</h2>
 
 		<table  align="center">
 			<tr>
@@ -170,8 +219,8 @@ h2{
 	</ul>
 
 	<footer>
-		<p style="font-family: font1;color:white;">@2023 CSS+HTML by Akawat + Email : petchsrojar@gmail.com</p>
-		<p style="font-family: font1;color:white;">Version 2.23 PreRelease by Akawat-SKO</p>
+		<p id="fontfooter">@2023 CSS+HTML by Akawat + Email : petchsrojar@gmail.com</p>
+		<p id="fontfooter">Version 2.25 Release by Akawat-SKO</p>
 	</footer>
 
 </body>
