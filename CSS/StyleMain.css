@@ -267,7 +267,7 @@ font-size:40px;
 	.cl1 {width:33.33%;}
 }*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	.cn1 {width: 8.33%;}
 	.cn2 {width: 16.66%;}
 	.cn3 {width: 25%;}
@@ -282,11 +282,33 @@ font-size:40px;
 	.cn12 {width: 100%;}
 	}
 
+@media only screen and (max-width: 768px) {
+	.cp1 {width: 8.33%;}
+	.cp2 {width: 16.66%;}
+	.cp3 {width: 25%;}
+	.cp4 {width: 33.33%;}
+	.cp5 {width: 41.66%;}
+	.cp6 {width: 50%;}
+	.cp7 {width: 58.33%;}
+	.cp8 {width: 66.66%;}
+	.cp9 {width: 75%;}
+	.cp10 {width: 83.33%;}
+	.cp11 {width: 91.66%;}
+	.cp12 {width: 100%;}
+
+}
+
 	[class*="cn"] {
 		float: left;
 		padding: 15px;
 		border: 1px solid red;
 	}
+	[class*="cp"] {
+		float: left;
+		padding: 15px;
+		border: 1px solid red;
+	}
+
 	* {
 		box-sizing: border-box;
 	  }

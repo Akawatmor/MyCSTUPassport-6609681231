@@ -26,7 +26,7 @@ background-color: #77a600 ;
 #welcomeinfo{
 
 /* border: 1px solid red;*/ /*enable For Debug border*/
-font-size:50px;
+font-size:3.5vw;
 font-family:font1 !important;
 
 }
@@ -61,6 +61,7 @@ border-radius: 20px;
 
 #welcometxt{
 	color:aqua;font-family:font2;
+	font-size : 1.25vw;
 }
 
 /*color transition from each section*/
@@ -217,6 +218,10 @@ table tr #width30l{
 #imagecomefrom{
 	border:1px solid black;
 	box-shadow: 20px 20px;
+	max-width:100%;
+    height : auto;
+	margin:4 0px
+
 }
 
 
@@ -305,16 +310,29 @@ table tr #width30l{
   display: table;
 }
 
+.phuketpic {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.autoscale{
+	width : 100%;
+	height : auto;
+
+}
+
 </style>
 
 <body class="animate2"> <!--Make Blank White border to animated color gradient-->
 
 	<div id="tabmenu" class="row">
 
-			<div class="cn11">
+			<div class="cp10 cn10">
 				<h1 class="head1">CSTU Passport by Akawat</h1>
 			</div>
-			<div class="menusec cn1" align="center">
+			<div class="menusec cp2 cn2" align="center">
 				<div class="menu3line">
 					<button class="dropbtn"><img src="Picture/LOGO/tab01.png" width="50px" height="50px"/></button>
 					<div class="linklist" align="left">
@@ -339,23 +357,20 @@ table tr #width30l{
 			</marquee>
 		</div>
 
-		<div id="trans1" class="row">
+		<div id="trans1">
 			‎
 		</div>
 
 		<div id="backgroundpic1" class="row">
 
-			<div class="cn5" align="center">
+			<div class="cp6 cn5" align="center">
+				<br><br><br><br>
 				<img class="welcomeimage" max-width="400px" height="450px"src="Picture/welcome.jpg" alt="รูปภาพของผมนะจ๊ะจะอยู่ตรงนี้"/>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<br><br><br><br>
 			</div>
 
 
-			<div id="welcometxt" class="cn6">
+			<div id="welcometxt" class="cp6 cn6">
 				<h1 class="animate1" id="welcomeinfo">
 					ยินดีต้อนรับ!!
 				</h1>
@@ -388,31 +403,40 @@ table tr #width30l{
 			‎
 	</div>
 
-	<div id="backgroundpic2" class="row">
-		<div>
-			<h1 class="animate2" id="introvidtext">
-				My Introduction Video
-			</h1>
+	<div id="backgroundpic2">
+		<div class="row">
+			<div class="cn1"></div>
+			<div class="cn7">
+				<h1 class="animate2" id="introvidtext">
+					My Introduction Video
+				</h1>
+			</div>
+			<div class="cn4"></div>
 		</div>
 
 		<br>
 		<br>
+		
+		<div class="row">
 
-		<div align="center">
-	 		<video
-			class="introvideo"
-			src="Video/intro100.mp4"
-			width="800"
-			height="450"
-			controls playsinline>
-			NOT SUPPORTED AV1
-			</video>
+			<div class="cp0 cn2"></div>
+			<div align="center" class="cp6 cn8 ">
+	 			<video
+				class="autoscale"
+				src="Video/intro100.mp4"
+				width="800"
+				height="450"
+				controls playsinline>
+				NOT SUPPORTED AV1
+				</video>
 
-			<br>
-			<br>
-			<br>
-			<br>
+				<br>
+				<br>
+				<br>
+				<br>
 
+			</div>
+			<div class="cp0 cn2"></div>
 		</div>
 	</div>
 
@@ -421,12 +445,20 @@ table tr #width30l{
 	</div> <!--Transition background-->
 
 	<div id="backgroundpic3" class="row">
-				
-		<h2 class="cn5 Mycontactanimate">
+
+		<div class="cp0 cn1"><br></div>
+		
+		<div class="cp6 cn3 ">
+		<h2 class="Mycontactanimate">
 			My Contact
 		</h2>
+		</div>
 
-		<table class="cn7 contacttable" align="center">
+		<div class="cp0 cn1"></div>
+
+		<div class="cp6 cn6">
+
+		<table class="contacttable autoscale" align="center">
 			<tr>
 				<th width="75px"></th>
 				<th width="300px"></th>
@@ -458,6 +490,8 @@ table tr #width30l{
 				<td><p>‎Petchsrojarr420 (Sept2023)</p></td>
 			</tr>
 		</table>
+		</div>
+		<div class="cp0 cn1"></div>
 
 	</div>
 		
@@ -465,140 +499,132 @@ table tr #width30l{
 		‎
 	</div><!--Transition background-->
 
-	<div id="backgroundpic4" class="row">
+	<div id="backgroundpic4">
+		<br>
+
+		<div class="row">
+			<div class="cp11 cn7">
+				<h1 id="comefrommain">Where I am come from?</h1>
+			</div>
+			<div class="cp1 cn5">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cp1 cn1"></div>
+			<div class="cp10 cn10">
+			<p id="comefromaux">ผมมาจากโรงเรียนภูเก็ตวิทยาลัยครับ ซึ่งโรงเรียนแห่งนี้ตั้งอยู่ในจังหวัดภูเก็ต ซึ่งจังหวัดภูเก็ตนั้นเป็นจังหวัดทางภาคใต้ฝั่งตะวันตก
+				ซึ่งเป็นจังหวัดที่มีนักท่องเที่ยวที่มีชาวต่างชาติมาเที่ยวมากที่สุดในประเทศไทย เพราะภูเก็ตมีความสวยงามทางด้านธรรมชาติ 
+				ทำให้มีที่เที่ยวที่หลากหลาย อย่างเช่น
+			</p>
+			</div>
+			<div class="cp1 cn1"></div>
+		</div>
+
+		<div class="row">
+			<div class="cp1 cn1"></div>
+				<div class="cp11 cn3">
+					<img src="Picture/PlusPicture/to03.jpg" width="380px" height="250px" class="autoscale"/>
+					<p>*แหลมพรหมเทพ*<br>คำแรกที่พูดถึงภูเก็ต</p>
+				</div>
+				<div class="cp12 cn4">
+					<img src="Picture/PlusPicture/to04.jpg" width="380px" height="250px" class="autoscale"/>
+					<p>*หาดในยาง*<br>เป็นหาดที่อยู่ใกล้สนามบินภูเก็ต <br>สามารถเห็นเครื่องบิน<br>ขึ้น-ลง ได้ตลอด</p>
+				</div>
+				<div class="cp12 cn3">
+					<img src="Picture/PlusPicture/to05.jpg" width="380px" height="250px" class="autoscale"/>
+					<p>*Phuket Old Town*</p>
+				</div>
+				<div class="cp0 cn1"></div>
+			</div>
+
 
 		<br>
-		<h1 id="comefrommain">Where I am come from?</h1>
-		<p id="comefromaux">ผมมาจากโรงเรียนภูเก็ตวิทยาลัยครับ ซึ่งโรงเรียนแห่งนี้ตั้งอยู่ในจังหวัดภูเก็ต ซึ่งจังหวัดภูเก็ตนั้นเป็นจังหวัดทางภาคใต้ฝั่งตะวันตก
-			ซึ่งเป็นจังหวัดที่มีนักท่องเที่ยวที่มีชาวต่างชาติมาเที่ยวมากที่สุดในประเทศไทย เพราะภูเก็ตมีความสวยงามทางด้านธรรมชาติ 
-			ทำให้มีที่เที่ยวที่หลากหลาย อย่างเช่น
-		</p>
-
-		<table width="100%">
-			<tr>
-				<th id="width5"></th>
-				<th id="width25"><img src="Picture/PlusPicture/to03.jpg" width="380px" height="250" id="imagecomefrom"/></th>
-				<th id="width20"><img src="Picture/PlusPicture/to04.jpg" width="380px" height="250" id="imagecomefrom"/></th>
-				<th id="width20"><img src="Picture/PlusPicture/to05.jpg" width="380px" height="250" id="imagecomefrom"/></th>
-				<th id="width10"></th>
-			</tr>
-			<tr>
-				<th id="width5"></th>
-				<th id="width25"><p>*แหลมพรหมเทพ*<br>คำแรกที่พูดถึงภูเก็ต</p></th>
-				<th id="width20"><p>*หาดในยาง*<br>เป็นหาดที่อยู่ใกล้สนามบินภูเก็ต สามารถเห็นเครื่องบิน<br>ขึ้น-ลง ได้ตลอด</p></th>
-				<th id="width20"><p>*Phuket Old Town*</p></th>
-				<th id="width10"></th>
-			</tr>
-		</table>
-
-		<br>
+		<div>
 
 		<p id="comefromaux">
 			โรงเรียนมัธยมศึกษาที่ผมจบมา ซึ่งก็คือ โรงเรียนภูเก็ตวิทยาลัย ซึ่งเป็นโรงเรียนที่มีชื่อเสียงเป็นอย่างมากในจังหวัดภูเก็ต
 			นอกจากทางด้านวิชาการที่โดดเด่นแล้ว โรงเรียนแห่งนี้ยังมีประวัติศาสตร์อันยาวนาน รวมถึงโรงเรียนแห่งนี้มีเด็กจบออกมา
 			เข้ามหาวิทยาลัยแห่งนี้เป็นอันดับต้นๆของจังหวัด
 		</p>
+		</div>
 
-		<table width="100%">
+		<div class="row">
 
-			<tr>
-				<td id="width15"></td>
-				<td id="width35">
-					<img
-					src="Picture/PlusPicture/to06.jpg"
+			<div class="cn1"></div>
+			<div class="cn5">
+				<img
+				src="Picture/PlusPicture/to06.jpg"
+				width="380px" 
+				height="250" 
+				alt="รูปที่มีป้ายโรงเรียนอยู่ด้านหน้า"
+				class="autoscale"/>
+				<p>
+					หน้าโรงเรียนภูเก็ตวิทยาลัย
+				</p>
+			</div>
+			<div class="cn5">
+				<img src="Picture/PlusPicture/to07.jpg" 
 					width="380px" 
 					height="250" 
-					align="left"
-					alt="รูปที่มีป้ายโรงเรียนอยู่ด้านหน้า"
-					id="imagecomefrom"/>
-				</td>
-				<td id="width35">
-					<img src="Picture/PlusPicture/to07.jpg" 
-					width="380px" 
-					height="250" 
-					align="right"
 					alt="รูปที่มีป้ายหอสมุด 100 ปีด้านหน้า"
-					id="imagecomefrom"/>
-				</td>
-				<td id="width15"></td>
-			</tr>
+					class="autoscale"/>
+				<p>
+					หอสมุดโรงเรียน
+				</p>
+			</div>
+			<div class="cn1"></div>
+		</div>
 
-			<tr>
-				<td id="width15"></td>
-				<td id="width35">
-					<p>
-						หน้าโรงเรียนภูเก็ตวิทยาลัย
-					</p>
-					<br>
-				</td>
-				<td id="width35">
-					<p>
-						หอสมุดโรงเรียน
-					</p>
-					<br>
-				</td>
-				<td id="width15"></td>
-			</tr>
+		<div class="row">
 
-			<tr>
-				<td id="width15"></td>
-				<td id="width35">
-					<img src="Picture/PlusPicture/to08.jpg" 
+			<div class="cn1"></div>
+			<div class="cn5">
+				<img src="Picture/PlusPicture/to08.jpg" 
 					width="380px" 
-					height="250" 
-					align="left"
+					height="250px" 
 					alt="รูปที่เห็นโรงเรียนได้อย่างชัดเจน เห็นเมืองด้วย"
-					id="imagecomefrom"/>
-				</td>
-				<td id="width35">
-					<img src="Picture/PlusPicture/to09.jpg" 
+					class="autoscale"/>
+					<p>ภาพมุมสูงโรงเรียน</p>
+			</div>
+			<div class="cn5">
+				<img src="Picture/PlusPicture/to09.jpg" 
 					width="380px" 
-					height="250" 
-					align="right"
+					height="250px" 
 					alt="ภาพตำหนักที่มีพระพุทธรูปอยู่ด้านใน"
-					id="imagecomefrom"/>
-				</td>
-				<td  id="width15"></td>
-					</tr>
-					<tr>
-						<td id="width15"></td>
-						<td id="width35"><p>ภาพมุมสูงโรงเรียน</p><br></td>
-						<td id="width35"><p>หน้าตำหนักอาจารย์ใหญ่ท่านแรก</p><br></td>
-						<td id="width15"></td>
-					</tr>
-		</table>
+					class="autoscale"/>
+					<p>หน้าตำหนักอาจารย์ใหญ่ท่านแรก</p>
+			</div>
+			<div class="cn1"></div>
+		</div>
 
 	</div>
 
 	<div id="trans5">‎
 	</div><!--Transition background-->
 
-	<div id="backgroundpic5" class="row">
-		<h2 id="freetimetxt">
-			What I am doing in my free time?
-		</h2>
+	<div id="backgroundpic5">
+		<div class="row">
+			<div class="cn7">
+				<h2 id="freetimetxt">
+				What I am doing in my free time?
+				</h2>
+			</div>
+			<div class="cn5"></div>
+		</div>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<div class="row">
+			<div class="cn6">
+				<img src="Picture/Graphs/to01.jpg" width="560" height="360" alt="แผนภูมิวงกลม" class="autoscale"/>
+			</div>
 
-		<img
-		src="Picture/Graphs/to01.jpg" 
-		width="560" 
-		height="360" 
-		alt="แผนภูมิวงกลม"
-		id="graphleft"/>
+			<div class="cn6">
+				<img src="Picture/Graphs/to02.jpg" width="560" height="360" alt="แผนภูมิแท่ง" class="autoscale"/>
+			</div>
 
-		<img src="Picture/Graphs/to02.jpg" 
-		width="560" 
-		height="360" 
-		alt="แผนภูมิแท่ง"
-		id="graphright"/>
+		</div>
 
-		<br><br><br><br>
+		<br><br>
 
 	</div>
 
@@ -606,38 +632,47 @@ table tr #width30l{
 		‎
 	</div>
 
-	<div id="backgroundpic6" class="row">
-
-		<h2 id="morevidtxt">
-			More Video ...
-		</h2>
-
-		<br><br><br><br><br><br>
-
-		<div id="vidalignright">
-
-			<video src="Video/sample2.mp4" width="640" height="360" controls >
-				  Not support AV1
-			</video>
-		<br>
-		<cite>พรหมลิคริสต์ งานแต่งเพลงศาสนาตอน ม.6 ช่วยแปลง 30p to 60p</cite>
+	<div id="backgroundpic6">
+		<div class="row">
+			<div class="cn5">
+				<h2 id="morevidtxt">
+					More Video ...
+				</h2>
+			</div>
+			<div class="cn7">
+			</div>
 		</div>
 
-		<div id="vidalignleft">
-			<video src="Video/sample1.mp4" width="640" height="360" controls>
-				Not support AV1
-			</video>
-		<br>
-		<cite>Call Center อลเวง ละครสั้นตอน ม.6 ตัวแสดง+ตัดต่อ</cite>
+		<div class="row">
+			<div id="" class="cn6">
+				<video src="Video/sample2.mp4" width="640" height="360" controls class="autoscale">
+					Not support AV1
+				</video>
+				<br>
+				<cite>พรหมลิคริสต์ งานแต่งเพลงศาสนาตอน ม.6 ช่วยแปลง 30p to 60p</cite>
+			</div>
+			<div id="" class="cn6">
+				<video src="Video/sample1.mp4" width="640" height="360" controls class="autoscale">
+					Not support AV1
+				</video>
+				<br>
+				<cite>Call Center อลเวง ละครสั้นตอน ม.6 ตัวแสดง+ตัดต่อ</cite>
+			</div>
 		</div>
-				
-		<div id="vidaligncenter">
-			<video src="Video/sample3.mp4" width="640" height="360" controls>
-				Not support AV1
-			</video>
 		<br>
-		<cite>Pasadena played by <a href="https://www.yourclassical.org/story/2017/03/14/introducing-the-hupfeld-phonolisztviolina">Hupfeld Phonoliszt Violina</a>
-		<br>Retrived from https://youtu.be/rEECgZ5b8IY?si=Y3rzJoATJ4nA_sO0</cite>
+		<div class="row">
+			<div class="cn2"></div>
+			<div class="cn8">
+				<div>
+					<video src="Video/sample3.mp4" width="640" height="360" controls class="autoscale">
+						Not support AV1
+					</video>
+					<br>
+					<cite>Pasadena played by <a href="https://www.yourclassical.org/story/2017/03/14/introducing-the-hupfeld-phonolisztviolina">Hupfeld Phonoliszt Violina</a>
+					<br>Retrived from https://youtu.be/rEECgZ5b8IY?si=Y3rzJoATJ4nA_sO0</cite>
+				</div>
+			</div>
+			<div class="cn2"></div>
 		</div>
 
 	<br><br><br><br><br>
@@ -649,54 +684,62 @@ table tr #width30l{
 	</div><!--Transition background-->
 
 
-	<div id="backgroundpic7" class="row">
-		<br>
-		<h2 id="morepictxt">Another More Picture</h2>
+	<div id="backgroundpic7">
+		<div class="row">
+			<br>
+			<div class="cn5">
+				<h2 id="morepictxt">Another More Picture</h2>
+			</div>
+			<div class="cn7">
+			</div>
+		</div>
 
-		<table width="100%">
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"><img src="Picture/fav02.jpg" height="280px" width="400px" id="imagecomefrom"></td>
-				<td id="width30"><img src="Picture/fav03.jpg" height="280px" width="400px" id="imagecomefrom"></td>
-				<td id="width30"><img src="Picture/fav04.jpg" height="280px" width="400px" id="imagecomefrom"></td>
-				<td id="width5"></td>
-			</tr>
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"><p>น้องแมวสีดำที่แก่และอ้วนมากๆ<br>‎</p></td>
-				<td id="width30"><p>น้องแมวส้มที่ขี้อ้อนสุดๆ ถูทุกสิ่งทั้งวัน<br>‎</p></td>
-				<td id="width30"><p>เมื่อแผ่นป้ายบิดแล้วมองมุมทางเข้า ที่จอดรถนี้ขาดทุน 100%<br>‎</p></td>
-				<td id="width5"></td>
-			</tr>
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"><img src="Picture/fav05.jpg" height="280px" width="400px" id="imagecomefrom"></td>
-				<td id="width30"><img src="Picture/fav06.jpg" height="280px" width="400px" id="imagecomefrom"></td>
-				<td id="width30"><img src="Picture/fav07.jpg" height="280px" width="300px" id="imagecomefrom"></td>
-				<td id="width5"></td>
-			</tr>
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"><p>กุ้งสดแช่น้ำปลา ~~ เห็นแล้วอยากกินมว้าก<br>‎</p></td>
-				<td id="width30"><p>อยากกินจินดาอีกละแต่คนเยอะและคิดว่าแพงไป(มาก)<br>เลยได้กินแต่หม่าล่าเสฉวน ชวง ชวง เว่ย<br>‎</p></td>
-				<td id="width30"><p>อยากกินโทสต์จังเลย คิดถึงรสชาติละ @^~^@<br>‎</p></td>
-				<td id="width5"></td>
-			</tr>
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"></td>
-				<td id="width30"><img src="Picture/fav08.jpg" height="280px" width="300px" id="imagecomefrom"></td>
-				<td id="width30"></td>
-				<td id="width5"></td>
-			</tr>
-			<tr id="morepicrow">
-				<td id="width5"></td>
-				<td id="width30"><p><br>‎</p></td>
-				<td id="width30"><p>เครื่องคิดเลขวิทยาศาสตร์แบบสายลับ แต่สีมันดูเด่นไปหน่อย<br>มันเล็กและเบามาก เหมาะกับตอนสอบมาก555+<br>‎</p></td>
-				<td id="width30"><p><br>‎</p></td>
-				<td id="width5"></td>
-			</tr>
-		</table>
+		<div class="row">
+
+			<div class="cn4">
+				<img src="Picture/fav02.jpg" height="280px" width="400px" id="imagecomefrom">
+				<p>น้องแมวสีดำที่แก่และอ้วนมากๆ<br>‎</p>
+			</div>
+			<div class="cn4">
+				<img src="Picture/fav03.jpg" height="280px" width="400px" id="imagecomefrom">
+				<p>น้องแมวส้มที่ขี้อ้อนสุดๆ ถูทุกสิ่งทั้งวัน<br>‎</p>
+			</div>
+			<div class="cn4">
+				<img src="Picture/fav04.jpg" height="280px" width="400px" id="imagecomefrom">
+				<p>เมื่อแผ่นป้ายบิดแล้วมองมุมทางเข้า ที่จอดรถนี้ขาดทุน 100%<br>‎</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="cn4">
+				<img src="Picture/fav05.jpg" height="280px" width="400px" id="imagecomefrom">
+				<p>กุ้งสดแช่น้ำปลา ~~ เห็นแล้วอยากกินมว้าก<br>‎</p>
+			</div>
+			<div class="cn4">
+				<img src="Picture/fav06.jpg" height="280px" width="400px" id="imagecomefrom">
+				<p>อยากกินจินดาอีกละแต่คนเยอะและคิดว่าแพงไป(มาก)<br>เลยได้กินแต่หม่าล่าเสฉวน ชวง ชวง เว่ย<br>‎</p>
+			</div>
+			<div class="cn4">
+				<img src="Picture/fav07.jpg" height="280px" width="300px" id="imagecomefrom">
+				<p>อยากกินโทสต์จังเลย คิดถึงรสชาติละ @^~^@<br>‎</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="cn4">
+			</div>
+			<div class="cn4">
+				<img src="Picture/fav08.jpg" height="280px" width="300px" id="imagecomefrom">
+				<p>เครื่องคิดเลขวิทยาศาสตร์แบบสายลับ แต่สีมันดูเด่นไปหน่อย<br>มันเล็กและเบามาก เหมาะกับตอนสอบมาก555+<br>‎</p>
+			</div>
+			<div class="cn4">
+			</div>
+
+		</div>
 
 	</div>
 
@@ -705,63 +748,129 @@ table tr #width30l{
 	</div><!--Transition background-->
 
 
-	<div id="backgroundpic8" class="row">
-		<br>
-		<h2 id="morepictxt">My Favourite Music !!</h2>
-		<table width="95%" align="center" id="favmusictableset">
-			<tr id="favmusicmainrow">
-				<td colspan="2" id="width50">เพลง 90's</td>
-				<td colspan="2" id="width50">เพลง 2000's-Modern</td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav01.opus" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>รักปอนปอน - ไมโคร (opus)</p></td>
-				<td id="width20l"><audio src="Audio/fav04.opus" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>L.O.V.E - สามซุปเปอร์แก็งค์ (opus)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav02.opus" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ทุกข์ไม่เว้นวันราชการ - อัสนี วสันต์ (opus)</p></td>
-				<td id="width20l"><audio src="Audio/fav03.opus" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ฤดูร้อน - Paradox (opus)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav07.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ด้วยรักและผูกพัน - ธงชัย แมคอินไตย์ (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav13.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>อยากร้องดังดัง - Palmy (AAC)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav09.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>หลอกกันเล่นเลย - นูโว (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav14.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ปลิว - พลอยชมพู (AAC)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav08.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>รอยร้าว - อิทธิ พลางกูล (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav15.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>เรื่องที่ขอ - ลูลา (AAC)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav10.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ได้อย่างเสียอย่าง - อัสนี วสันต์ (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav16.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ลูกอม - วัชราวลี (AAC)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav11.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>กองไว้ - เจตริน วรรธนะสิน (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav17.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>ซักวันฉันจะดีพอ - Bodyslam (AAC)</p></td>
-			</tr>
-			<tr>
-				<td id="width20l"><audio src="Audio/fav12.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>อย่าดีกว่า - ไมโคร (AAC)</p></td>
-				<td id="width20l"><audio src="Audio/fav18.m4a" controls playsinline>Not Support Opus on your Browsers!</audio></td>
-				<td id="width30l"><p>เพ้อเจ้อ - Alarm9 (AAC)</p></td>
-			</tr>
-		</table>
+	<div id="backgroundpic8">
+
+		<div class="row">
+
+		</div>
+
+		<div class="row">
+			<div class="cn6">
+				<h2>เพลง 90's</h2>
+			</div>
+			<div class="cn6">
+				<h2>เพลง 2000's-Modern</h2>
+			</div>
+			
+		</div>
+
+		<div class="row">
+
+			<div class="cn6"> 
+
+				<div>
+					<audio src="Audio/fav01.opus" controls playsinline>
+						Not Support Opus on your Browsers!
+					</audio>
+					<p>รักปอนปอน - ไมโคร (opus)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav02.opus" controls playsinline>
+						Not Support Opus on your Browsers!
+					</audio>
+					<p>ทุกข์ไม่เว้นวันราชการ - อัสนี วสันต์ (opus)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav07.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>ด้วยรักและผูกพัน - ธงชัย แมคอินไตย์ (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav09.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>หลอกกันเล่นเลย - นูโว (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav08.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>รอยร้าว - อิทธิ พลางกูล (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav10.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>ได้อย่างเสียอย่าง - อัสนี วสันต์ (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav11.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>กองไว้ - เจตริน วรรธนะสิน (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav12.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>อย่าดีกว่า - ไมโคร (AAC)</p>
+				</div>
+
+			</div>
+			<div class="cn6">
+
+				<div>
+					<audio src="Audio/fav04.opus" controls playsinline>
+						Not Support Opus on your Browsers!
+					</audio>
+					<p>L.O.V.E - สามซุปเปอร์แก็งค์ (opus)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav03.opus" controls playsinline>
+						Not Support Opus on your Browsers!
+					</audio>
+					<p>ฤดูร้อน - Paradox (opus)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav13.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>อยากร้องดังดัง - Palmy (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav14.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>ปลิว - พลอยชมพู (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav15.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>เรื่องที่ขอ - ลูลา (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav16.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>ลูกอม - วัชราวลี (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav17.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>ซักวันฉันจะดีพอ - Bodyslam (AAC)</p>
+				</div>
+				<div>
+					<audio src="Audio/fav18.m4a" controls playsinline>
+						Not Support m4a (AAC) on your Browsers!
+					</audio>
+					<p>เพ้อเจ้อ - Alarm9 (AAC)</p>
+				</div>
+			</div>
+			
+		</div>
 
 	</div>
 
