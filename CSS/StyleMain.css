@@ -27,11 +27,46 @@
 	background-color: #77a600;
 }
 
+#profilepicold{
+	border-radius:90%;
+	margin-left:20px;
+}
+
+.profilepicold2{
+	float:left
+}
+
+.autoscale2{
+	width : 5vw;
+	height: 5vw;
+
+}
+
+.oldtitle{
+	float:left;
+	margin-left:45px;
+
+}
+
+.oldtabmenu{
+	margin-right:50px;
+
+}
+
 .dropbtn {
 	background-color: #77a600;
-	margin-top:15px;
-	border: none;
+	/*margin:1.5vw;*/
 	cursor: pointer;
+	transition: 0.5s;
+	border : 2px solid black;
+
+  }
+
+  .dropbtnold {
+	background-color: #77a600;
+	/*margin:1.5vw;*/
+	cursor: pointer;
+	float:right;
 	transition: 0.5s;
 	border : 2px solid black;
 
@@ -40,7 +75,7 @@
 
   
   .menu3line {
-	display: inline-block;
+
 	z-index: 1;
   }
   
@@ -50,16 +85,17 @@
 	right:0px;
 	margin-right:8px;
 	background-color: #c3ecff;
-	min-width: 300px;
+
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index:2;
   }
   
   .linklist a {
 	color: black;
-	padding: 16px 16px;
+	padding: 2vw 2vw;
 	text-decoration: none;
 	font-family:font1;
+	font-size:2vw;
 	display: block;
 	transition: 0.5s;
   }
@@ -79,23 +115,24 @@
   }
 
 .contacttable {
+	width:100%;
+	height:auto;
 	font-family: font2;
-	font-size:20px;
+	font-size:1.75vw;
 	text-shadow:0 0 20px black;
 	color: rgb(124, 255, 255);
 	animation: floatwater 1.2s linear infinite;
 	animation-direction: alternate;
-	opacity:100%;
 	background-image:url(../Picture/Backgrounds/bg08.png);
 	background-size: cover;
 }
 
 .Mycontactanimate{
 	text-align: center;
-	margin-top:125px;
 	padding:20px;
+	margin-top:5vw;
 	color:white;
-	font-size:50px;
+	font-size : 3.25vw;
 	font-family:font1;
 	text-shadow:0 0 10px black;
 	animation: floatwater 0.9s linear infinite;
@@ -105,6 +142,22 @@
 	width:100%;
 	height:auto;
 	}
+
+	.Mycontactanimate2{
+		text-align: center;
+		padding:20px;
+		margin-top:5vw;
+		color:white;
+		font-size : 3.25vw;
+		font-family:font1;
+		text-shadow:0 0 10px black;
+		animation: floatwater 0.9s linear infinite;
+		animation-direction: alternate;
+		background-image:url(../Picture/Backgrounds/bg08.png);
+		background-size: cover;
+		width:100%;
+		height:auto;
+		}
 
 
 .animate1{
@@ -227,15 +280,27 @@ cite{
 	max-width: 100%;
   height: auto;
 }
+
+#profileold{
+float:left;
+}
+
 .head1{
 display: block;
 color: white;
-text-align: left;
-padding-left: 80px;
 text-decoration: none;
 font-family:font1;
-font-size:40px;
+font-size:2.5vw;
 }
+
+.head1old{
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family:font1;
+	font-size:2.5vw;
+	margin-left:100px;
+	}
 
 .head1Res{
 	color: white;
@@ -249,11 +314,14 @@ font-size:40px;
 #marqueecolor{
 	background-color:yellow;
 	color:red;
-	font-family:font2
+	font-family:font2;
+	font-size: 1.5vw;
 }
 
 #fontfooter{
-	font-family: font1;color:white;
+	font-family: font1;
+	color:white;
+	font-size:1.5vw;
 }
 
 /*Grid View 12 section*/
@@ -266,6 +334,12 @@ font-size:40px;
 @media only screen and (max-width: 576px) {
 	.cl1 {width:33.33%;}
 }*/
+
+
+
+* {
+	box-sizing: border-box;
+  }
 
 @media only screen and (min-width: 769px) {
 	.cn1 {width: 8.33%;}
@@ -280,9 +354,85 @@ font-size:40px;
 	.cn10 {width: 83.33%;}
 	.cn11 {width: 91.66%;}
 	.cn12 {width: 100%;}
+	.cn0{
+		display: none;
 	}
 
-@media only screen and (max-width: 768px) {
+	[class*="cn"] {
+		float: left;
+		padding: 15px;
+		/*border: 2px dashed rgb(153, 237, 19);*/
+	}
+	.autoscale{
+		width : 100%;
+		height: auto;
+		object-fit: contain;
+	
+	}
+
+	#welcometxt{
+		color:aqua;font-family:font2;
+		font-size : 1.25vw;
+	}
+
+	#welcomeinfo{
+
+		/* border: 1px solid red;*/ /*enable For Debug border*/
+		font-size:3.5vw;
+		font-family:font1;
+		
+		}
+	
+	}
+
+	@media only screen and (max-width: 320px) {
+		.cv1 {width: 8.33%;}
+		.cv2 {width: 16.66%;}
+		.cv3 {width: 25%;}
+		.cv4 {width: 33.33%;}
+		.cv5 {width: 41.66%;}
+		.cv6 {width: 50%;}
+		.cv7 {width: 58.33%;}
+		.cv8 {width: 66.66%;}
+		.cv9 {width: 75%;}
+		.cv10 {width: 83.33%;}
+		.cv11 {width: 91.66%;}
+		.cv12 {width: 100%;}
+		.cv0{
+			display: none;
+		}
+
+		[class*="cv"] {
+			float: left;
+			padding: 2vw;
+			/*border: 2px dashed rgb(240, 0, 116);*/
+		}
+		.autoscale{
+			width : 100%;
+			height: auto;
+		
+		}
+
+		#welcometxt{
+			color:aqua;font-family:font2;
+			font-size : 1.9vw;
+		}
+
+		#welcomeinfo{
+
+			font-size:6vw;
+			font-family:font1;
+			
+			}
+
+			.head1{
+				font-size:3.5vw;
+			}
+		
+		}
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
 	.cp1 {width: 8.33%;}
 	.cp2 {width: 16.66%;}
 	.cp3 {width: 25%;}
@@ -295,21 +445,45 @@ font-size:40px;
 	.cp10 {width: 83.33%;}
 	.cp11 {width: 91.66%;}
 	.cp12 {width: 100%;}
+	.cp0{
+		display: none;
+	}
+
+	[class*="cp"] {
+	float: left;
+	padding: 2vw;
+	/*
+	border: 2px dashed rgb(80, 64, 255);*/
+	}
+	.contacttable{
+		font-size:3vw;
+	}
+	.piccomfrom{
+		width:80%;
+	}
+	
+	.autoscale{
+		width : 80%;
+		height: auto;
+		object-fit: fill;
+	
+	}
+
+	#welcometxt{
+		color:aqua;
+		font-family:font2;
+		font-size : 1.25vw;
+	}
+
+	#welcomeinfo{
+
+		font-size:3.5vw;
+		font-family:font1;
+		
+		}
+}
 
 }
 
-	[class*="cn"] {
-		float: left;
-		padding: 15px;
-		border: 1px solid red;
-	}
-	[class*="cp"] {
-		float: left;
-		padding: 15px;
-		border: 1px solid red;
-	}
-
-	* {
-		box-sizing: border-box;
-	  }
+	
   
